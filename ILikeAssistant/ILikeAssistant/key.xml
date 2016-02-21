@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+        <key>application-identifier</key>
+        <string>ER7HF9N8DH.com.starfiregame.ILikeAssistant</string>
+        <key>com.apple.developer.team-identifier</key>
+        <string>ER7HF9N8DH</string>
+        <key>get-task-allow</key>
+        <true/>
+        <key>keychain-access-groups</key>
+        <array>
+        <string>ER7HF9N8DH.com.starfiregame.ILikeAssistant</string>
+        </array>
+
+        <key>com.apple.springboard.launchapplications</key>
+        <true/>
+        <key>com.apple.springboard.debugapplications</key>
+        <true/>
+        <key>get-task-allow</key>
+        <true/>
+        <key>proc_info-allow</key>
+        <true/>
+        <key>task_for_pid-allow</key>
+        <true/>
+        <key>run-unsigned-code</key>
+        <true/>
+        <key>com.apple.QuartzCore.global-capture</key>
+        <true/>
+        <key>com.apple.avfoundation.allow-still-image-capture-shutter-sound-manipulation</key>
+        <true/>
+        <key>com.apple.private.hid.client.event-dispatch</key>
+        <true/>
+        <key>com.apple.private.hid.client.event-filter</key>
+        <true/>
+        <key>com.apple.private.hid.manager.client</key>
+        <true/>
+        <key>com.apple.private.hid.client.service-protected</key>
+        <true/>
+        <key>com.apple.private.hid.client.event-monitor</key>
+        <true/>
+        <key>com.apple.accounts.appleaccount.fullaccess</key>
+        <true/>
+        <key>com.apple.itunesstored.private</key>
+        <true/>
+        <key>com.apple.private.accounts.customaccesssinfo</key>
+        <true/>
+</dict>
+</plist>

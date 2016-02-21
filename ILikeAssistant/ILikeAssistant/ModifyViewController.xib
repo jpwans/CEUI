@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModifyViewController">
+            <connections>
+                <outlet property="addressTextField" destination="bYO-RP-40K" id="IhN-ZK-pdM"/>
+                <outlet property="btnSelect" destination="zQA-Qh-4t8" id="fv2-Jf-3BE"/>
+                <outlet property="describeTextField" destination="Xlx-Df-W5S" id="frS-wX-Ogq"/>
+                <outlet property="pointerButton" destination="3OR-XL-meE" id="ekm-0g-e7F"/>
+                <outlet property="scrollView" destination="12O-li-Tc5" id="UWL-UL-SP1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="12O-li-Tc5">
+                    <rect key="frame" x="0.0" y="44" width="568" height="276"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="type" translatesAutoresizingMaskIntoConstraints="NO" id="2Mg-NE-TDZ">
+                            <rect key="frame" x="134" y="84" width="30" height="30"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="指针" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6L5-G7-Zbd">
+                            <rect key="frame" x="172" y="120" width="123" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQA-Qh-4t8">
+                            <rect key="frame" x="172" y="84" width="254" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="4 Bytes">
+                                <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="selectClicked:" destination="-1" eventType="touchUpInside" id="Ve8-15-aYQ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3OR-XL-meE">
+                            <rect key="frame" x="134" y="120" width="30" height="30"/>
+                            <state key="normal" image="unchecked">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pointerAction:" destination="-1" eventType="touchUpInside" id="JMk-5v-pgg"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="无描述" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xlx-Df-W5S">
+                            <rect key="frame" x="172" y="46" width="254" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="description" translatesAutoresizingMaskIntoConstraints="NO" id="b8C-3s-WSS">
+                            <rect key="frame" x="134" y="46" width="30" height="30"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ip_address" translatesAutoresizingMaskIntoConstraints="NO" id="exc-l4-V3l">
+                            <rect key="frame" x="134" y="8" width="30" height="30"/>
+                        </imageView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0000000000" borderStyle="roundedRect" placeholder="请输入地址" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bYO-RP-40K">
+                            <rect key="frame" x="172" y="8" width="123" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="=???" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WSX-Xx-OT0">
+                            <rect key="frame" x="303" y="8" width="123" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="12O-li-Tc5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="53x-9q-Hzc"/>
+                <constraint firstAttribute="trailing" secondItem="12O-li-Tc5" secondAttribute="trailing" id="NfE-vO-6lS"/>
+                <constraint firstItem="12O-li-Tc5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="deZ-wQ-73r"/>
+                <constraint firstAttribute="bottom" secondItem="12O-li-Tc5" secondAttribute="bottom" id="uYF-VN-KAQ"/>
+            </constraints>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="356" y="283"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="description" width="72" height="72"/>
+        <image name="ip_address" width="128" height="128"/>
+        <image name="type" width="32" height="32"/>
+        <image name="unchecked" width="24" height="24"/>
+    </resources>
+</document>
